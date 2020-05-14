@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerGroupDemo {
+public class ConsumerWithThreadDemo {
 
-    private static final Logger logger = LoggerFactory.getLogger(ConsumerGroupDemo.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerWithThreadDemo.class);
 
     public static void main(String[] args) {
         final String bootstrapServers = "127.0.0.1:9092";
