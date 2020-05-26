@@ -27,10 +27,6 @@ public class TwitterSafeProducer {
     private static final Logger logger = LoggerFactory.getLogger(TwitterSafeProducer.class);
 
 
-    private static final String API_KEY = "API_KEY";
-    private static final String API_SECRET_KEY = "API_SECRET_KEY";
-    private static final String ACCESS_TOKEN = "ACCESS_TOKEN";
-    private static final String ACCESS_TOKEN_SECRET = "ACCESS_TOKEN_SECRET";
     static final List<String> terms = Lists.newArrayList("kafka");
 
     public TwitterSafeProducer() {
@@ -131,7 +127,7 @@ public class TwitterSafeProducer {
 
         // These secrets should be read from a config file
 
-        Authentication hosebirdAuth = new OAuth1(API_KEY, API_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET);
+        Authentication hosebirdAuth = new OAuth1(ProducerConstants.API_KEY, ProducerConstants.API_SECRET_KEY, ProducerConstants.ACCESS_TOKEN, ProducerConstants.ACCESS_TOKEN_SECRET);
 
         // Creating a client
         ClientBuilder builder = new ClientBuilder()
