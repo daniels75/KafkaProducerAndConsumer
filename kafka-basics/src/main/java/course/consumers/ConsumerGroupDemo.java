@@ -1,4 +1,4 @@
-package org.daniels.kafka.course.consumers;
+package course.consumers;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
@@ -12,9 +12,9 @@ import java.time.Duration;
 import java.util.Arrays;
 import java.util.Properties;
 
-public class ConsumerWithThreadDemo {
+public class ConsumerGroupDemo {
 
-    private static final Logger logger = LoggerFactory.getLogger(ConsumerWithThreadDemo.class);
+    private static final Logger logger = LoggerFactory.getLogger(ConsumerGroupDemo.class);
 
     public static void main(String[] args) {
         final String bootstrapServers = "127.0.0.1:9092";
